@@ -78,10 +78,17 @@ class="fixed inset-0 bg-black/70 hidden z-40">
 <!-- Mobile Menu -->
 
 <div id="mobileMenu"
-class="fixed top-0 right-[-100%] w-[30%] h-screen bg-slate-900 z-50 transition-all duration-500 flex flex-col">
+class="fixed top-0 right-[-100%] w-[30%] h-screen bg-slate-900 z-50 transition-all duration-500">
+
+    <!-- Close Button -->
+    <button
+        id="closeMenuBtn"
+        class="absolute top-5 right-5 text-3xl text-white hover:text-red-400 transition">
+        ✕
+    </button>
 
     <!-- Menu -->
-    <div class="flex-1 flex flex-col justify-center items-center gap-8 text-xl">
+    <div class="h-full flex flex-col justify-center items-center gap-8 text-xl">
 
         <a href="#home">Home</a>
 
@@ -92,12 +99,6 @@ class="fixed top-0 right-[-100%] w-[30%] h-screen bg-slate-900 z-50 transition-a
         <a href="https://forms.gle/Nup77mK2wFZLJDw69">Contact</a>
 
     </div>
-
-    <!-- Close Button -->
-    <button id="closeMenuBtn"
-        class="mb-10 flex justify-center items-center text-4xl text-white hover:text-red-400 transition">
-        ✕
-    </button>
 
 </div>
 
