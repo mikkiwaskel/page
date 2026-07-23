@@ -1,0 +1,197 @@
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:#020617;
+
+}
+
+.fadeOut{
+
+opacity:0;
+
+transform:translateY(20px);
+
+transition:.5s;
+
+}
+
+.fadeIn{
+
+opacity:1;
+
+transform:translateY(0px);
+
+transition:.5s;
+
+}
+
+button{
+
+transition:.3s;
+
+}
+
+
+
+nav a{
+
+position:relative;
+
+}
+nav a:not(.logoLink)::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #921c1d;
+    transition: .4s;
+}
+
+nav a:not(.logoLink):hover::after {
+    width: 100%;
+}
+
+
+
+/* Portfolio Section */
+.categoryBtn{
+
+padding:14px 28px;
+
+border-radius:12px;
+
+background:#1e293b;
+
+transition:.3s;
+
+font-weight:600;
+
+}
+
+.categoryBtn:hover{
+
+background:#921c1d;
+
+}
+
+.activeCategory{
+
+background:#921c1d;
+
+}
+
+.portfolioCard{
+
+background:#070c19;
+
+
+overflow:hidden;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+.portfolioCard{
+    flex: 0 0 calc((100% - 96px) / 4); /* Desktop = 4 cards */
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Tablet */
+@media (max-width:1024px){
+
+    .portfolioCard{
+        flex: 0 0 calc((100% - 64px) / 3); /* 3 cards */
+    }
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .portfolioCard{
+        flex: 0 0 calc((100% - 32px) / 2); /* 2 cards */
+    }
+
+}
+.portfolioCard:hover{
+
+/* transform:translateY(-10px); */
+
+box-shadow:0 20px 40px rgba(0,0,0,.45);
+
+}
+
+.portfolioCard img,
+
+.portfolioCard video{
+
+width:100%;
+
+height:240px;
+
+object-fit:cover;
+transition: transform .4s ease;
+
+}
+.portfolioCard:hover img,
+.portfolioCard:hover video{
+
+    transform: scale(1.22);
+
+}
+.portfolioContent{
+
+    padding:22px;
+
+    background: rgba(7, 12, 25, 0.1);
+
+    backdrop-filter: blur(2px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+}
+
+.portfolioContent h3{
+
+font-size:24px;
+
+font-weight:700;
+
+margin-bottom:12px;
+
+}
+
+.portfolioContent p{
+
+color:#cbd5e1;
+
+}
+
+#portfolioModal img{
+
+max-height:90vh;
+
+}
+
+#portfolioModal video{
+
+width:100%;
+
+max-height:90vh;
+
+
+}
+/* End Portfolio Section */
