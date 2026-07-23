@@ -74,6 +74,19 @@ transition:.3s;
 font-weight:600;
 
 }
+@media (max-width: 1024px){
+    .categoryBtn{
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px){
+    .categoryBtn{
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+}
 
 .categoryBtn:hover{
 
