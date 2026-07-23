@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NAMIKIRO</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-slate-950 text-white font-[Poppins] overflow-x-hidden">
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-white/5 border-b border-white/10">
+
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-5">
+
+<a href="#" class="logoLink" id="logoLink">
+    <img
+        src="assets/home/logoR.png"
+        alt="NAMIKIRO Logo"
+        class="h-12 w-auto">
+</a>
+
+<ul class="hidden md:flex gap-10 text-lg">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#portfolio">Portfolio</a></li>
+
+<li><a href="#">Sketch</a></li>
+
+<li><a href="https://forms.gle/Nup77mK2wFZLJDw69">Contact</a></li>
+
+</ul>
+
+
+<button id="menuBtn" class="md:hidden text-3xl">
+
+☰
+
+</button>
+
+</div>
+
+</nav>
+
+
+
+<!-- Overlay -->
+
+<div id="overlay"
+class="fixed inset-0 bg-black/70 hidden z-40">
+
+</div>
+
+
+<!-- Mobile Menu -->
+
+<div id="mobileMenu"
+class="fixed top-0 right-[-100%] w-[30%] h-screen bg-slate-900 z-50 transition-all duration-500">
+
+<div class="pt-28 pl-8 flex flex-col gap-8 text-xl">
+
+<a href="#home">Home</a>
+
+<a href="#portfolio">Portfolio</a>
+
+<a href="#">Sketch</a>
+
+<a href="https://forms.gle/Nup77mK2wFZLJDw69">Contact</a>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- HERO -->
+
+<section
+    id="home"
+    class="relative h-[86vh] flex items-center justify-center overflow-hidden">
+
+    <!-- Background Image -->
+    <img
+    id="heroImage"
+    src="assets/home/developer.png"
+    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
+    >
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-8 text-center">
+
+        <h2 class="text-2xl text-white mb-4">
+            Hi,
+        </h2>
+
+        <h1 class="text-6xl md:text-8xl font-bold text-white mb-4">
+            I'm
+        </h1>
+
+        <h2
+        id="changingText"
+        class="text-5xl md:text-7xl font-bold text-[#921c1d] transition-all duration-500"
+        >
+            Developer
+        </h2>
+
+        <p class="mt-8 text-gray-200 text-lg max-w-2xl mx-auto">
+            Game Developer, Technical Artist,
+            3D Designer and Creative Problem Solver.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-5 mt-10">
+
+            <button id="portfolioBtn" 
+                class="px-8 py-4 bg-[#921c1d] rounded-xl hover:bg-[#921c1d] transition">
+                View Portfolio
+            </button>
+
+            <a
+                href="https://forms.gle/Nup77mK2wFZLJDw69"
+                class="px-8 py-4 border border-[#921c1d] text-white rounded-xl hover:bg-[#921c1d] transition inline-block">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PORTFOLIO ================= -->
+
+<section id="portfolio" class="py-24 bg-slate-950">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-5xl font-bold text-center mb-12">
+
+PORTFOLIO
+
+</h2>
+
+<!-- Category Buttons -->
+
+<div class="flex flex-wrap justify-center gap-5 mb-14">
+
+<button class="categoryBtn activeCategory"
+data-category="2d">
+
+2D Design
+
+</button>
+
+<button class="categoryBtn"
+data-category="3d">
+
+3D Design
+
+</button>
+
+<button class="categoryBtn"
+data-category="gameplay">
+
+Gameplay
+
+</button>
+
+</div>
+
+<!-- Cards -->
+<div class="relative overflow-hidden">
+
+    <!-- Previous -->
+    <button
+        id="portfolioPrev"
+        class="absolute left-0 top-1/2 z-20
+            w-12 h-12 rounded-full text-2xl
+            transition-transform duration-300
+            hover:scale-125">
+
+        ❮
+
+    </button>
+
+    <!-- Cards -->
+
+    <div class="overflow-hidden">
+
+        <div
+            id="portfolioTrack"
+            class="flex gap-8 transition-transform duration-500">
+
+        </div>
+
+    </div>
+
+    <!-- Next -->
+
+    <button
+        id="portfolioNext"
+        class="absolute right-0 top-1/2 z-20
+            w-12 h-12 rounded-full text-2xl
+            transition-transform duration-300
+            hover:scale-125">
+
+        ❯
+
+    </button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Modal -->
+
+<!-- Portfolio Modal -->
+<div id="portfolioModal"
+     class="fixed inset-0 hidden bg-black/95 z-50">
+
+    <!-- Close Button -->
+    <button id="closeModal"
+            class="absolute top-5 right-6 text-5xl text-white z-50">
+        &times;
+    </button>
+
+    <!-- Previous -->
+    <button id="prevBtn"
+            class="absolute left-5 top-1/2 -translate-y-1/2 text-white text-5xl z-50">
+        ❮
+    </button>
+
+    <!-- Main Content -->
+    <div class="w-full h-full flex items-center justify-center">
+
+        <div
+            class="w-[95%] max-w-7xl h-[90vh]
+                flex flex-col md:flex-row
+                overflow-hidden">
+
+            <!-- Left 70% -->
+            <div
+                id="modalContent"
+                class="w-full h-[70%] md:w-[70%] md:h-full
+                    bg-black
+                    flex items-center justify-center
+                    overflow-hidden">
+            </div>
+
+            <!-- Right 30% -->
+            <div
+                class="w-full h-[30%] md:w-[30%] md:h-full
+                    p-5 md:p-8
+                    overflow-y-auto
+                    bg-[#2b0506]">
+
+                <h2
+                    id="modalTitle"
+                    class="text-3xl font-bold mb-5">
+                </h2>
+
+                <p
+                    id="modalDescription"
+                    class="text-gray-300 leading-8">
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Next -->
+    <button id="nextBtn"
+            class="absolute right-5 top-1/2 -translate-y-1/2 text-white text-5xl z-50">
+        ❯
+    </button>
+
+    <!-- Thumbnails -->
+    <div id="thumbnailContainer"
+         class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-3 overflow-x-auto">
+
+    </div>
+
+</div>
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-slate-900 border-t border-white/10 py-10">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+
+            <!-- Logo + Copyright -->
+            <div class="flex flex-col items-center md:items-start">
+
+                <img
+                    src="assets/home/logoR.png"
+                    alt="NAMIKIRO Logo"
+                    class="h-16 w-auto">
+
+                <p class="mt-4 text-gray-400 text-xs text-center md:text-left">
+                    © 2026 NAMIKIRO. All Rights Reserved.
+                </p>
+
+            </div>
+
+            <!-- Social Section -->
+            <div class="flex flex-col items-center md:items-end">
+
+                <p class="text-sm font-semibold text-gray-300 mb-3">
+                    Connect
+                </p>
+
+                <div class="flex items-center gap-6">
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/namikiro">
+                        <img
+                            src="assets/icons/github_icon.svg"
+                            alt="GitHub"
+                            class="w-8 h-8 invert hover:scale-110 transition">
+                    </a>
+
+                    <!-- ArtStation -->
+                    <a href="https://namikiro.artstation.com/">
+                        <img
+                            src="assets/icons/artstation_icon.svg"
+                            alt="ArtStation"
+                            class="w-8 h-8 invert hover:scale-110 transition">
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/oxi-projekt-589a29336">
+                        <img
+                            src="assets/icons/linkedin_icon.svg"
+                            alt="LinkedIn"
+                            class="w-8 h-8 invert hover:scale-110 transition">
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/namikiro">
+                        <img
+                            src="assets/icons/instagram_icon.svg"
+                            alt="Instagram"
+                            class="w-8 h-8 invert hover:scale-110 transition">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="js/portfolio.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
