@@ -108,7 +108,7 @@ function loadPortfolio(category) {
 
             ${media}
 
-            <div class="portfolioContent p-4">
+            <div class="portfolioContent p-4 flex flex-col gap-2">
 
                 <h1 class="text-md font-bold">
                     ${project.title}
