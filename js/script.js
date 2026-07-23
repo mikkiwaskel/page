@@ -4,10 +4,16 @@ const titles = [
     "Artist"
 ];
 
-const images = [
+const desktopImages = [
     "assets/home/developer.png",
     "assets/home/designer.png",
     "assets/home/artist.png"
+];
+
+const mobileImages = [
+    "assets/home/developer2.png",
+    "assets/home/designer2.png",
+    "assets/home/artist2.png"
 ];
 
 const text = document.getElementById("changingText");
@@ -15,28 +21,35 @@ const image = document.getElementById("heroImage");
 
 let index = 0;
 
+function getImages() {
+    // Mobile: width less than 768px (Tailwind's md breakpoint)
+    return window.innerWidth < 768
+        ? mobileImages
+        : desktopImages;
+}
+
 function changeHero() {
+
     index = (index + 1) % titles.length;
 
-    // Fade out
     image.classList.add("opacity-0");
     text.classList.add("opacity-0");
 
     setTimeout(() => {
+
+        const images = getImages();
+
         text.textContent = titles[index];
         image.src = images[index];
 
-        // Fade in
         image.classList.remove("opacity-0");
         text.classList.remove("opacity-0");
+
     }, 300);
 }
 
-// Navbar link clickables........
-
-
-// Change every 5 seconds
 setInterval(changeHero, 5000);
+
 
 
 document.getElementById("portfolioBtn").addEventListener("click", () => {
