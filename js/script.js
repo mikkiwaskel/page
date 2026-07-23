@@ -88,14 +88,14 @@ function loadPortfolio(category) {
             media = `
                 <img
                 src="${thumb.src}"
-                class="w-full h-64 object-cover">
+                class="w-full h-44 md:h-64 object-cover">
             `;
 
         } else {
 
             media = `
                 <video muted
-                class="w-full h-64 object-cover">
+                class="w-full h-44 md:h-64 object-cover">
 
                     <source src="${thumb.src}">
 
@@ -110,11 +110,11 @@ function loadPortfolio(category) {
 
             <div class="portfolioContent p-4 flex flex-col gap-2">
 
-                <h1 class="text-md font-bold">
+                <h1 class="text-xs md:text-sm lg:text-base font-bold">
                     ${project.title}
                 </h1>
 
-                <p class="text-gray-300 text-xs">
+                <p class="text-gray-300 text-[10px] md:text-xs lg:text-sm">
                     ${truncateDescription(project.description)}
                 </p>
 
