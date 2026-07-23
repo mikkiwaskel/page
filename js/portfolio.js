@@ -12,17 +12,17 @@ media: [
 
         {
           type: "video",
-          src: "assets/portfolio/2d/a1/1 bird character idle animation.mp4"
+          src: "assets/portfolio/2d/1 bird character idle animation.mp4"
         },
 
         {
           type: "video",
-          src: "assets/portfolio/2d/a1/2 bird character feeling sleepy.mp4"
+          src: "assets/portfolio/2d/2 bird character feeling sleepy.mp4"
         },
 
         {
           type: "video",
-          src: "assets/portfolio/2d/a1/3 bird character sleeping animation.mp4"
+          src: "assets/portfolio/2d/3 bird character sleeping animation.mp4"
         }
 
 ]
@@ -39,12 +39,12 @@ media: [
 
         {
           type: "video",
-          src: "assets/portfolio/2d/a2/7 butterfly animation.mp4"
+          src: "assets/portfolio/2d/7 butterfly animation.mp4"
         },
 
         {
           type: "video",
-          src: "assets/portfolio/2d/a2/8 charactor animation prototype.mp4"
+          src: "assets/portfolio/2d/8 charactor animation prototype.mp4"
         }
 
 ]
@@ -60,7 +60,7 @@ media: [
 
         {
           type: "video",
-          src: "assets/portfolio/2d/a3/6 Animation work in after effect.mp4"
+          src: "assets/portfolio/2d/6 Animation work in after effect.mp4"
         }
 
 ]
@@ -76,12 +76,12 @@ media: [
 
         {
           type: "video",
-          src: "assets/portfolio/2d/a4/10 Particle Distortion 1.mp4"
+          src: "assets/portfolio/2d/10 Particle Distortion 1.mp4"
         },
 
         {
           type: "video",
-          src: "assets/portfolio/2d/a4/11 Particle distortion 2.mp4"
+          src: "assets/portfolio/2d/11 Particle distortion 2.mp4"
         }
 
 ]
@@ -97,7 +97,7 @@ media: [
 
         {
           type: "video",
-          src: "assets/portfolio/2d/a5/12 pentab working.mp4"
+          src: "assets/portfolio/2d/12 pentab working.mp4"
         }
 
 ]
@@ -113,15 +113,15 @@ media: [
 
         {
           type: "image",
-          src: "assets/portfolio/2d/a6/16 logo alignment3.jpg"
+          src: "assets/portfolio/2d/16 logo alignment3.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/2d/a6/15 logo alignment2.jpg"
+          src: "assets/portfolio/2d/15 logo alignment2.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/2d/a6/14 logo alignment1.jpg"
+          src: "assets/portfolio/2d/14 logo alignment1.jpg"
         }
 
 ]
@@ -137,7 +137,7 @@ media: [
 
         {
           type: "video",
-          src: "assets/portfolio/2d/a7/4 frame(4fps) based animation.mp4"
+          src: "assets/portfolio/2d/4 frame(4fps) based animation.mp4"
         }
 
 ]
@@ -159,28 +159,28 @@ media:[
     
         {
           type: "image",
-          src: "assets/portfolio/3d/a1/c1.jpg"
+          src: "assets/portfolio/3d/c1.jpg"
         },
 
         {
           type: "image",
-          src: "assets/portfolio/3d/a1/c2.jpg"
+          src: "assets/portfolio/3d/c2.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a1/c3.jpg"
+          src: "assets/portfolio/3d/c3.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a1/c4.jpg"
+          src: "assets/portfolio/3d/c4.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a1/c5.jpg"
+          src: "assets/portfolio/3d/c5.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a1/c6.jpg"
+          src: "assets/portfolio/3d/c6.jpg"
         }
 
 
@@ -198,28 +198,28 @@ media:[
     
         {
           type: "image",
-          src: "assets/portfolio/3d/a2/a1.jpg"
+          src: "assets/portfolio/3d/a1.jpg"
         },
 
         {
           type: "image",
-          src: "assets/portfolio/3d/a2/a2.jpg"
+          src: "assets/portfolio/3d/a2.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a2/a3.jpg"
+          src: "assets/portfolio/3d/a3.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a2/a4.jpg"
+          src: "assets/portfolio/3d/a4.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a2/a5.jpg"
+          src: "assets/portfolio/3d/a5.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a2/a6.jpg"
+          src: "assets/portfolio/3d/a6.jpg"
         },
 
 
@@ -236,20 +236,20 @@ media:[
     
         {
           type: "image",
-          src: "assets/portfolio/3d/a3/b1.jpg"
+          src: "assets/portfolio/3d/b1.jpg"
         },
 
         {
           type: "image",
-          src: "assets/portfolio/3d/a3/b2.jpg"
+          src: "assets/portfolio/3d/b2.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a3/b3.jpg"
+          src: "assets/portfolio/3d/b3.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a3/b4.jpg"
+          src: "assets/portfolio/3d/b4.jpg"
         }
 
 ]
@@ -266,12 +266,12 @@ media:[
     
         {
           type: "image",
-          src: "assets/portfolio/3d/a4/1.png"
+          src: "assets/portfolio/3d/1.png"
         },
 
         {
           type: "image",
-          src: "assets/portfolio/3d/a4/2.png"
+          src: "assets/portfolio/3d/2.png"
         }
 
 ]
@@ -288,19 +288,19 @@ media:[
     
         {
           type: "image",
-          src: "assets/portfolio/3d/a5/Scope_With_Mat1.jpg"
+          src: "assets/portfolio/3d/Scope_With_Mat1.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a5/Scope_With_Mat2.jpg"
+          src: "assets/portfolio/3d/Scope_With_Mat2.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a5/Scope_With_Mat3.jpg"
+          src: "assets/portfolio/3d/Scope_With_Mat3.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a5/Scope_With_Mat4.jpg"
+          src: "assets/portfolio/3d/Scope_With_Mat4.jpg"
         }
 
 ]
@@ -317,28 +317,28 @@ media:[
     
         {
           type: "image",
-          src: "assets/portfolio/3d/a6/11.jpg"
+          src: "assets/portfolio/3d/11.jpg"
         },
 
         {
           type: "image",
-          src: "assets/portfolio/3d/a6/12.jpg"
+          src: "assets/portfolio/3d/12.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a6/13.jpg"
+          src: "assets/portfolio/3d/13.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a6/14.jpg"
+          src: "assets/portfolio/3d/14.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a6/15.jpg"
+          src: "assets/portfolio/3d/15.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a6/16.jpg"
+          src: "assets/portfolio/3d/16.jpg"
         }
 
 
@@ -355,32 +355,32 @@ media:[
     
         {
           type: "image",
-          src: "assets/portfolio/3d/a7/Portfolio_Gallery_S2A.jpg"
+          src: "assets/portfolio/3d/Portfolio_Gallery_S2A.jpg"
         },
 
         {
           type: "image",
-          src: "assets/portfolio/3d/a7/Portfolio_Gallery_S2B.jpg"
+          src: "assets/portfolio/3d/Portfolio_Gallery_S2B.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a7/Portfolio_Gallery_S2C.jpg"
+          src: "assets/portfolio/3d/Portfolio_Gallery_S2C.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a7/Portfolio_Gallery_S2D.jpg"
+          src: "assets/portfolio/3d/Portfolio_Gallery_S2D.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a7/Portfolio_Gallery_S2E.jpg"
+          src: "assets/portfolio/3d/Portfolio_Gallery_S2E.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a7/Portfolio_Gallery_S2F.jpg"
+          src: "assets/portfolio/3d/Portfolio_Gallery_S2F.jpg"
         },
         {
           type: "image",
-          src: "assets/portfolio/3d/a7/Portfolio_Gallery_S2G.jpg"
+          src: "assets/portfolio/3d/Portfolio_Gallery_S2G.jpg"
         }
 
 
@@ -404,7 +404,7 @@ media:[
     
         {
           type: "video",
-          src: "assets/portfolio/gameplay/a1/5_SlidingWithPhysicsCollision.mp4"
+          src: "assets/portfolio/gameplay/5_SlidingWithPhysicsCollision.mp4"
         }
 
 
@@ -422,7 +422,7 @@ media:[
     
         {
           type: "video",
-          src: "assets/portfolio/gameplay/a2/6_3dNavMeshAiMovements.mp4"
+          src: "assets/portfolio/gameplay/6_3dNavMeshAiMovements.mp4"
         }
 
 
@@ -439,7 +439,7 @@ media:[
     
         {
           type: "video",
-          src: "assets/portfolio/gameplay/a3/1_Vr3d_GamePlay1.mp4"
+          src: "assets/portfolio/gameplay/1_Vr3d_GamePlay1.mp4"
         }
 
 
@@ -456,7 +456,7 @@ media:[
     
         {
           type: "video",
-          src: "assets/portfolio/gameplay/a4/2_Vr3d_Gameplay2.mp4"
+          src: "assets/portfolio/gameplay/2_Vr3d_Gameplay2.mp4"
         }
 
 
@@ -473,7 +473,7 @@ media:[
     
         {
           type: "video",
-          src: "assets/portfolio/gameplay/a5/3_3dMultiplayerSynchronise.mp4"
+          src: "assets/portfolio/gameplay/3_3dMultiplayerSynchronise.mp4"
         }
 
 
@@ -490,7 +490,7 @@ media:[
     
         {
           type: "video",
-          src: "assets/portfolio/gameplay/a6/9_3dWeaponSystem.mp4"
+          src: "assets/portfolio/gameplay/9_3dWeaponSystem.mp4"
         }
 
 
@@ -507,7 +507,7 @@ media:[
     
         {
           type: "video",
-          src: "assets/portfolio/gameplay/a7/7_3dLaserDodger_GamePlay.mp4"
+          src: "assets/portfolio/gameplay/7_3dLaserDodger_GamePlay.mp4"
         }
 
 
@@ -524,7 +524,7 @@ media:[
     
         {
           type: "video",
-          src: "assets/portfolio/gameplay/a8/4_3dPhysics.mp4"
+          src: "assets/portfolio/gameplay/4_3dPhysics.mp4"
         }
 
 
@@ -541,7 +541,7 @@ media:[
     
         {
           type: "video",
-          src: "assets/portfolio/gameplay/a9/Final_resultCompressed.mp4"
+          src: "assets/portfolio/gameplay/Final_resultCompressed.mp4"
         }
 
 
