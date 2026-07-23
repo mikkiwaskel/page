@@ -50,6 +50,8 @@ document.getElementById("logoLink").addEventListener("click", (e) => {
     window.location.href = window.location.pathname;
 });
 
+
+
 const track = document.getElementById("portfolioTrack");
 const buttons = document.querySelectorAll(".categoryBtn");
 
@@ -65,7 +67,6 @@ function truncateDescription(text, words = 6) {
 
 let currentCategory = "2d";
 let currentIndex = 0;
-
 function loadPortfolio(category) {
 
     currentCategory = category;
@@ -213,7 +214,6 @@ window.addEventListener("resize", () => {
 
 loadPortfolio("2d");
 
-loadPortfolio("2d");
 
 buttons.forEach(button=>{
 
@@ -434,6 +434,7 @@ close.click();
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 const overlay = document.getElementById("overlay");
+const closeMenuBtn = document.getElementById("closeMenuBtn");
 
 menuBtn.addEventListener("click", () => {
     mobileMenu.classList.remove("right-[-100%]");
@@ -442,8 +443,13 @@ menuBtn.addEventListener("click", () => {
     overlay.classList.remove("hidden");
 });
 
+// Close from overlay
 overlay.addEventListener("click", closeMenu);
 
+// Close from X button
+closeMenuBtn.addEventListener("click", closeMenu);
+
+// Close when a link is clicked
 document.querySelectorAll("#mobileMenu a").forEach(link => {
     link.addEventListener("click", closeMenu);
 });
