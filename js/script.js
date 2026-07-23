@@ -110,11 +110,11 @@ function loadPortfolio(category) {
 
             <div class="portfolioContent p-4">
 
-                <h3 class="text-xl font-bold">
+                <h1 class="text-md font-bold">
                     ${project.title}
-                </h3>
+                </h1>
 
-                <p class="text-gray-300">
+                <p class="text-gray-300 text-xs">
                     ${truncateDescription(project.description)}
                 </p>
 
