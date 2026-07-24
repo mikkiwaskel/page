@@ -277,7 +277,34 @@ media:[
 ]
 
 },
+{
 
+title:"Oxi Character",
+
+description:"Autodesk Maya, Corona, VRay",
+
+media:[
+    
+        {
+          type: "image",
+          src: "assets/portfolio/3d/oxi1.jpg"
+        },
+        {
+          type: "image",
+          src: "assets/portfolio/3d/oxi2.jpg"
+        },
+        {
+          type: "image",
+          src: "assets/portfolio/3d/oxi3.jpg"
+        },
+        {
+          type: "image",
+          src: "assets/portfolio/3d/oxi4.jpg"
+        }
+
+]
+
+},
 {
 
 title:"3D Scope",
