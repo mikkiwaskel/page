@@ -149,44 +149,7 @@ media: [
 
 "3d":[
 
-{
 
-title:"Wheel",
-
-description:"Autodesk Maya, Substance Painter, Photoshop, Corona",
-
-media:[
-    
-        {
-          type: "image",
-          src: "assets/portfolio/3d/c1.jpg"
-        },
-
-        {
-          type: "image",
-          src: "assets/portfolio/3d/c2.jpg"
-        },
-        {
-          type: "image",
-          src: "assets/portfolio/3d/c3.jpg"
-        },
-        {
-          type: "image",
-          src: "assets/portfolio/3d/c4.jpg"
-        },
-        {
-          type: "image",
-          src: "assets/portfolio/3d/c5.jpg"
-        },
-        {
-          type: "image",
-          src: "assets/portfolio/3d/c6.jpg"
-        }
-
-
-]
-
-},
 
 {
 
@@ -255,23 +218,30 @@ media:[
 ]
 
 },
-
 {
 
-title:"Dark Interior Design",
+title:"Autumn Trees",
 
-description:"Autodesk 3DsMax, Substance Painter, Corona",
+description:"Autodesk 3DsMax, Substance Painter, Corona, VRay",
 
 media:[
     
         {
           type: "image",
-          src: "assets/portfolio/3d/1.png"
+          src: "assets/portfolio/3d/leaf_Corona Light001.jpg"
         },
 
         {
           type: "image",
-          src: "assets/portfolio/3d/2.png"
+          src: "assets/portfolio/3d/leaf_Corona Light002.jpg"
+        },
+        {
+          type: "image",
+          src: "assets/portfolio/3d/leaf_Corona Light003.jpg"
+        },
+        {
+          type: "image",
+          src: "assets/portfolio/3d/leaf_Corona Light004.jpg"
         }
 
 ]
@@ -305,6 +275,66 @@ media:[
 ]
 
 },
+{
+
+title:"Dark Interior Design",
+
+description:"Autodesk 3DsMax, Substance Painter, Corona",
+
+media:[
+    
+        {
+          type: "image",
+          src: "assets/portfolio/3d/1.png"
+        },
+
+        {
+          type: "image",
+          src: "assets/portfolio/3d/2.png"
+        }
+
+]
+
+},
+{
+
+title:"Wheel",
+
+description:"Autodesk Maya, Substance Painter, Photoshop, Corona",
+
+media:[
+    
+        {
+          type: "image",
+          src: "assets/portfolio/3d/c1.jpg"
+        },
+
+        {
+          type: "image",
+          src: "assets/portfolio/3d/c2.jpg"
+        },
+        {
+          type: "image",
+          src: "assets/portfolio/3d/c3.jpg"
+        },
+        {
+          type: "image",
+          src: "assets/portfolio/3d/c4.jpg"
+        },
+        {
+          type: "image",
+          src: "assets/portfolio/3d/c5.jpg"
+        },
+        {
+          type: "image",
+          src: "assets/portfolio/3d/c6.jpg"
+        }
+
+
+]
+
+},
+
 {
 
 title:"3D Scope",
