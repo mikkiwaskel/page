@@ -42,7 +42,7 @@
     </span>
 </a>
 
-<ul class="hidden md:flex gap-10 text-lg">
+<ul class="hidden md:flex gap-8 lg:gap-10 text-md lg:text-lg">
 
 <li><a href="#home">Home</a></li>
 
@@ -51,6 +51,20 @@
 <li><a href="#">Sketch</a></li>
 
 <li><a href="https://forms.gle/Nup77mK2wFZLJDw69">Contact</a></li>
+
+<!-- Play Games Button -->
+    <li>
+        <a
+            href="#games"
+            class="logoLink px-5 py-2 text-white font-medium
+                   border border-[#b82b2d]
+                   transition-all duration-300
+                   hover:no-underline
+                   hover:shadow-[0_0_20px_rgba(146,28,29,0.8)]
+                   hover:bg-[#921c1d]">
+            Play Games
+        </a>
+    </li>
 
 </ul>
 
@@ -78,7 +92,7 @@ class="fixed inset-0 bg-black/70 hidden z-40">
 <!-- Mobile Menu -->
 
 <div id="mobileMenu"
-class="fixed top-0 right-[-100%] w-[30%] h-screen bg-slate-900 z-50 transition-all duration-500">
+class="fixed top-0 right-[-100%] w-[40%] h-screen bg-slate-900 z-50 transition-all duration-500">
 
     <!-- Close Button -->
     <button
@@ -88,7 +102,7 @@ class="fixed top-0 right-[-100%] w-[30%] h-screen bg-slate-900 z-50 transition-a
     </button>
 
     <!-- Menu -->
-    <div class="h-full flex flex-col justify-center items-center gap-8 text-sm md:text-base lg:text-xl">
+    <div class="h-full flex flex-col justify-center items-center gap-8 text-sm md:text-base lg:text-xl w-full">
 
         <a href="#home">Home</a>
 
@@ -97,6 +111,18 @@ class="fixed top-0 right-[-100%] w-[30%] h-screen bg-slate-900 z-50 transition-a
         <a href="#">Sketch</a>
 
         <a href="https://forms.gle/Nup77mK2wFZLJDw69">Contact</a>
+
+        <!-- Play Games Button -->
+        <a
+            href="#games"
+            class="self-center w-[94px] px-1 py-1 text-white font-medium
+                border border-[#b82b2d]
+                transition-all duration-300
+                hover:no-underline
+                hover:shadow-[0_0_20px_rgba(146,28,29,0.8)]
+                hover:bg-[#921c1d]">
+            Play Games
+        </a>
 
     </div>
 
@@ -321,6 +347,105 @@ PORTFOLIO
     </div>
 
 </div>
+
+<!-- ================= GAMES ================= -->
+
+<section id="games" class="py-24 bg-slate-900">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-xl md:text-2xl lg:text-4xl font-bold text-center mb-12">
+            GAMES
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-8 md:gap-14 lg:gap-28">
+
+            <!-- PIKU -->
+            <a href="play/piku/" class="group block">
+
+                <div class="relative
+                            w-[120px] h-[120px]
+                            md:w-[200px] md:h-[200px]
+                            lg:w-[260px] lg:h-[260px]
+                            overflow-hidden rounded-2xl border border-white/10">
+
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
+                        <source src="assets/home/piku1.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="absolute inset-0 bg-gray-900/0 group-hover:bg-gray-900/55 transition-all duration-300 flex items-center justify-center">
+
+                        <span class="opacity-0 group-hover:opacity-100 text-white text-sm md:text-base lg:text-lg font-semibold transition duration-300">
+                            Click to Play
+                        </span>
+
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm py-2 text-center">
+
+                        <h3 class="text-xs md:text-sm lg:text-base font-semibold">
+                            PIKU
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+            <!-- KILLZ -->
+            <a href="play/killz/" class="group block">
+
+                <div class="relative
+                            w-[120px] h-[120px]
+                            md:w-[200px] md:h-[200px]
+                            lg:w-[260px] lg:h-[260px]
+                            overflow-hidden rounded-2xl border border-white/10">
+
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
+                        <source src="assets/home/killz1.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="absolute inset-0 bg-gray-900/0 group-hover:bg-gray-900/55 transition-all duration-300 flex items-center justify-center">
+
+                        <span class="opacity-0 group-hover:opacity-100 text-white text-sm md:text-base lg:text-lg font-semibold transition duration-300">
+                            Click to Play
+                        </span>
+
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm py-2 text-center">
+
+                        <h3 class="text-xs md:text-sm lg:text-base font-semibold">
+                            Killz
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
 <!-- ================= FOOTER ================= -->
 
 <footer class="bg-slate-900 border-t border-white/10 py-4 md:py-8 lg:py-10">
@@ -393,7 +518,57 @@ PORTFOLIO
     </div>
 
 </footer>
+<script>
+document.querySelectorAll('#games a').forEach(card => {
 
+    card.addEventListener('click', function(e) {
+
+        if (window.innerWidth < 768) {
+
+            e.preventDefault();
+
+            showMobileGamePopup();
+
+        }
+
+    });
+
+});
+
+
+function showMobileGamePopup(){
+
+    const popup = document.createElement("div");
+
+    popup.innerHTML = `
+        <div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 px-6">
+            
+            <div class="bg-slate-900 border border-[#921c1d] p-6 text-center max-w-xs shadow-[0_0_30px_rgba(146,28,29,0.7)]">
+
+                <h2 class="text-md font-bold mb-3 text-white">
+                    Device Error
+                </h2>
+
+                <p class="text-gray-300 text-xs leading-6">
+                    This game is designed for desktop screens.
+                    Please open it on a PC or laptop to play.
+                </p>
+
+                <button
+                    onclick="this.closest('.fixed').remove()"
+                    class="mt-5 px-4 py-2 text-[14px] bg-[#921c1d] hover:bg-[#b82b2d] transition">
+                    OK
+                </button>
+
+            </div>
+
+        </div>
+    `;
+
+    document.body.appendChild(popup);
+
+}
+</script>
 <script src="js/portfolio.js"></script>
 <script src="js/script.js"></script>
 
