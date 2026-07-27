@@ -51,7 +51,6 @@ function changeHero() {
 setInterval(changeHero, 5000);
 
 
-
 document.getElementById("portfolioBtn").addEventListener("click", () => {
     document.getElementById("portfolio").scrollIntoView({
         behavior: "smooth"
@@ -144,6 +143,76 @@ function loadPortfolio(category) {
     updateSlider();
 
 }
+// Mobile drag slider
+const slider = document.getElementById("portfolioTrack");
+
+let startX = 0;
+let currentTranslate = 0;
+let previousTranslate = 0;
+let dragging = false;
+
+slider.addEventListener("touchstart", touchStart, { passive: true });
+slider.addEventListener("touchmove", touchMove, { passive: false });
+slider.addEventListener("touchend", touchEnd);
+
+function touchStart(e) {
+
+    if (window.innerWidth >= 768) return;
+
+    dragging = true;
+    startX = e.touches[0].clientX;
+
+    const cards = document.querySelectorAll(".portfolioCard");
+    const gap = 32;
+
+    previousTranslate =
+        -(currentIndex * (cards[0].offsetWidth + gap));
+
+    slider.style.transition = "none";
+}
+
+function touchMove(e) {
+
+    if (!dragging || window.innerWidth >= 768) return;
+
+    e.preventDefault();
+
+    const currentX = e.touches[0].clientX;
+    const diff = currentX - startX;
+
+    currentTranslate = previousTranslate + diff;
+
+    slider.style.transform =
+        `translateX(${currentTranslate}px)`;
+}
+
+function touchEnd() {
+
+    if (!dragging || window.innerWidth >= 768) return;
+
+    dragging = false;
+
+    const cards = document.querySelectorAll(".portfolioCard");
+
+    const gap = 32;
+    const cardWidth = cards[0].offsetWidth + gap;
+
+    currentIndex = Math.round(Math.abs(currentTranslate) / cardWidth);
+
+    let visibleCards = 2;
+
+    currentIndex = Math.max(
+        0,
+        Math.min(
+            currentIndex,
+            portfolio[currentCategory].length - visibleCards
+        )
+    );
+
+    slider.style.transition = "transform .4s ease";
+
+    updateSlider();
+}
 
 function updateSlider() {
 
@@ -181,14 +250,18 @@ function updateSlider() {
 
 portfolioNext.onclick = () => {
 
-    if (currentIndex < portfolio[currentCategory].length - 3) {
+    let visibleCards = 4;
 
-        currentIndex++;
-
-        updateSlider();
-
+    if (window.innerWidth <= 768) {
+        visibleCards = 2;
+    } else if (window.innerWidth <= 1024) {
+        visibleCards = 3;
     }
 
+    if (currentIndex < portfolio[currentCategory].length - visibleCards) {
+        currentIndex++;
+        updateSlider();
+    }
 };
 
 portfolioPrev.onclick = () => {
